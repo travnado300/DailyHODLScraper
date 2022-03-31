@@ -34,7 +34,7 @@ def kylinPriceRequest(currencyPair):
     kylinPriceResponse = dict(r.json())
     return kylinPriceResponse["payload"][2]["price"]
 
-''' FOR USE WHEN KYLIN HISTORICAL PRICE DATA API IS FUNCTIONAL AGAIN
+''' FOR FUTURE USE
 def kylinPriceRequest(currencyPair, start, end, timeperiod):
     r = requests.get('https://api.kylin-node.co.uk/prices/hist?period=' + timeperiod + '&after=' + start + '&before=' + end + '&currency_pair=' + currencyPair)
     kylinPriceResponse = dict(r.json())
