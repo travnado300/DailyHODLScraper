@@ -3,9 +3,6 @@ from datetime import datetime
 import time
 import math
 import requests
-from pycoingecko import CoinGeckoAPI
-
-cg = CoinGeckoAPI()
 
 hour = 3600
 day = 86400
